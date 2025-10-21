@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page - Malathy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>Welcome to My Landing Page</h1>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section with Circle Photo -->
+    <section class="hero">
+        <div class="container">
+            <h2>Hello, I am Malathy 👋</h2>
+            <p>Welcome to my personal landing page. Learn HTML and CSS with me! 🌟</p>
+            <a href="#about" class="btn">Get Started</a>
+            <div class="hero-photo">
+                <!-- Upload your photo inside 'images' folder and rename to malathy.jpg -->
+                <img src="images/malathy.jpg" alt="Malathy Photo">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>My name is Malathy. I am learning web development and building this landing page as a project. 🎉  
+            This page includes sections, circular photo, services, and contact form. 🌟</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <h2>My Skills ✨</h2>
+            <div class="columns">
+                <div class="column">
+                    <i class="fa-solid fa-paint-brush fa-3x"></i>
+                    <h3>Web Design 🎨</h3>
+                    <p>Create attractive designs using HTML and CSS creatively.</p>
+                </div>
+                <div class="column">
+                    <i class="fa-solid fa-code fa-3x"></i>
+                    <h3>Development 💻</h3>
+                    <p>Build and structure websites properly using HTML, CSS, and JavaScript.</p>
+                </div>
+                <div class="column">
+                    <i class="fa-solid fa-headset fa-3x"></i>
+                    <h3>Support 🛠️</h3>
+                    <p>Provide guidance and help improve web development projects.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me 📧</h2>
+            <p>Fill out the form below and I'll get back to you!</p>
+            <form id="contactForm">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+                <p id="successMsg">Message sent successfully! ✅</p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Malathy. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        const form = document.getElementById('contactForm');
+        const successMsg = document.getElementById('successMsg');
+        successMsg.style.display = 'none';
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            successMsg.style.display = 'block';
+            form.reset();
+        });
+    </script>
+
+    <!-- Font Awesome CDN -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
+
