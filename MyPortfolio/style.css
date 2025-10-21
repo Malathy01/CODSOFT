@@ -1,0 +1,102 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Section */
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+header nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Section Styling */
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+}
+
+/* About Section */
+#about img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Skills Section */
+#skills ul {
+    list-style-type: square;
+    padding-left: 40px;
+    font-size: 1.1em;
+}
+
+/* Projects Section */
+.project {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-left: 5px solid #4CAF50;
+    background-color: #fafafa;
+}
+
+/* Resume Section */
+#resume p {
+    font-style: italic;
+    color: #555;
+}
+
+/* Contact Section */
+#contact p {
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+/* Link hover effect */
+a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
